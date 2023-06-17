@@ -17,5 +17,5 @@ EShope is an Ecommerce project developed using Flutter as front-end, Java Spring
 
 ## Screenshots
 
-![App Screenshot1](/screenshots/screenshot1.png) ![App Screenshot2](/screenshots/screenshot2.png) ![App Screenshot3](/screenshots/screenshot3.png) ![App Screenshot4](/screenshots/screenshot4.png) ![App Screenshot5](/screenshots/screenshot5.png) ![App Screenshot6](/screenshots/screenshot6.png) ![App Screenshot7](/screenshots/screenshot7.png) ![App Screenshot8](/screenshots/screenshot8.png)
+![App Screenshot1](/screenshots/screenshot01.png) ![App Screenshot2](/screenshots/screenshot2.png) ![App Screenshot3](/screenshots/screenshot3.png) ![App Screenshot4](/screenshots/screenshot4.png) ![App Screenshot5](/screenshots/screenshot5.png) ![App Screenshot6](/screenshots/screenshot6.png) ![App Screenshot7](/screenshots/screenshot7.png) ![App Screenshot8](/screenshots/screenshot8.png)
 
