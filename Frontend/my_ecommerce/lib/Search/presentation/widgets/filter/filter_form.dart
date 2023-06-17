@@ -73,7 +73,6 @@ class _FilterFormState extends State<FilterForm> {
           Expanded(
             child: ListView(
               shrinkWrap: true,
-              //physics: NeverScrollableScrollPhysics(),
               padding: EdgeInsets.only(
                 left: 14,
                 right: 14,

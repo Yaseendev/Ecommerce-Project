@@ -73,7 +73,6 @@ class _SingupFormState extends State<SingupForm> {
               hintText: 'E-mail',
               prefixIcon: Icon(Icons.email_outlined),
             ),
-            //autofocus: true,
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             maxLines: 1,

@@ -113,28 +113,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     state is CategoryLoaded
                         ? TextButton.icon(
                             onPressed: () {
-                              // showModalBottomSheet(
-                              //   context: context,
-                              //   isScrollControlled: true,
-                              //   // useRootNavigator: true,
-                              //   useSafeArea: true,
-                              //   shape: RoundedRectangleBorder(
-                              //     borderRadius: BorderRadius.vertical(
-                              //       top: const Radius.circular(14),
-                              //     ),
-                              //   ),
-                              //   builder: (ctx) {
-                              //     return FilterSheet(
-                              //       allBrands: <String>[
-                              //         'Brand 1',
-                              //         'Brand 2',
-                              //         'Brand 3',
-                              //         'Brand 4',
-                              //         'Brand 5',
-                              //       ],
-                              //     );
-                              //   },
-                              // );
                             },
                             icon: Icon(Icons.filter_list_rounded),
                             label: Text('Filter'),

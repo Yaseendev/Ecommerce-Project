@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:equatable/equatable.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:my_ecommerce/Address/data/models/address.dart';
 import 'package:my_ecommerce/Address/data/repositories/address_repo.dart';
 import 'package:my_ecommerce/Utils/services/service_locator.dart';

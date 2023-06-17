@@ -2,8 +2,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_ecommerce/Account/blocs/account_bloc/account_bloc.dart';
+import 'package:my_ecommerce/Address/blocs/addresses_bloc/addresses_bloc.dart';
+import 'package:my_ecommerce/Cart/blocs/cart_bloc/cart_bloc.dart';
 import 'package:my_ecommerce/Primary/presentation/screens/primary_screen.dart';
 import 'package:my_ecommerce/Utils/constants.dart';
+import 'package:my_ecommerce/Wishlist/bloc/wishlist_bloc.dart';
 import '../widgets/account_screen_items.dart';
 import '../widgets/user_inf0_items.dart';
 import 'login_screen.dart';
@@ -16,10 +19,10 @@ class AccountScreen extends StatelessWidget {
     return BlocConsumer<AccountBloc, AccountState>(
       listener: (context, state) {
         if (state is AccountLoggedout) {
-          //   context
-          //..read<AddressesBloc>().add(Reset())
-          // ..read<CartBloc>().add(ResetCart());
-          //..read<WishlistBloc>().add(ResetWishlist());
+             context
+          ..read<AddressesBloc>().add(Reset())
+          ..read<CartBloc>().add(ResetCart())
+          ..read<WishlistBloc>().add(ResetWishlist());
           Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(
                   settings: RouteSettings(name: '/primary'),
@@ -145,7 +148,7 @@ class AccountScreen extends StatelessWidget {
                                           CircularProgressIndicator.adaptive(),
                                     ),
                                   );
-                                  // context.read<AccountBloc>().add(Logout());
+                                //  context.read<AccountBloc>().add(Logout()); //TODO: Implement
                                 }
                               });
                             },

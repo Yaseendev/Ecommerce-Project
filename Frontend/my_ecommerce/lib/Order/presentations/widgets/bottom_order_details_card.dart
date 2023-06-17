@@ -103,7 +103,6 @@ class BottomOrderDetailsCard extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14),
                           ),
-                          //backgroundColor: Colors.red,
                           foregroundColor: Colors.red,
                           side: BorderSide(color: Colors.red)),
                       onPressed: state is OrderLoading

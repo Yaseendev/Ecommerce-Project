@@ -4,7 +4,6 @@ import 'package:my_ecommerce/Account/data/providers/account_db_provider.dart';
 import 'package:my_ecommerce/Shared/models/network_failure.dart';
 import '../models/cart.dart';
 import '../models/cart_item.dart';
-import '../models/coupon.dart';
 import '../providers/cart_db_provider.dart';
 import '../providers/cart_network_provider.dart';
 import 'package:my_ecommerce/Order/data/models/order.dart' as appOrder;

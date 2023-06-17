@@ -33,8 +33,6 @@ class Product extends Equatable {
   final double rating;
   //@HiveField(12)
   final String link;
-  // @HiveField(13)
-  // final num finalPrice;
 
   Product({
     required this.id,
@@ -109,12 +107,7 @@ class Product extends Equatable {
           ? map['discountPercentage'] as num
           : null,
       salePrice: map['finalPrice'],
-      // map['discountPercentage'] != null
-      //     ? (map['price'] - (map['price'] * (map['discountPercentage'] / 100)))
-      //     : null,
-      //regularPrice: map['regularPrice'] as num,
       desc: map['description'] ?? '',
-      //isFav: map['isFav'] as bool,
       brand: map['brand'] ?? '',
       thumbnail: map['thumbnail'] ?? '',
       category: Category.fromMap(map['category']),
@@ -122,18 +115,6 @@ class Product extends Equatable {
       link: map['link'] ?? '',
     );
   }
-
-  // double? get getTotalRating {
-  //   const num initval = 0;
-
-  //   return (ratings != null
-  //           ? ratings!.fold(
-  //               initval,
-  //               (previousValue, element) =>
-  //                   element.rating + double.parse(previousValue.toString()))
-  //           : 0) /
-  //       (ratings != null && ratings!.isNotEmpty ? ratings!.length : 1);
-  // }
 
   String toJson() => json.encode(toMap());
 

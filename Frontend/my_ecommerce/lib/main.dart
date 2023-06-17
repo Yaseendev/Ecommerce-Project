@@ -7,7 +7,6 @@ import 'package:sizer/sizer.dart';
 import 'Account/blocs/account_bloc/account_bloc.dart';
 import 'Address/blocs/addresses_bloc/addresses_bloc.dart';
 import 'Cart/blocs/cart_bloc/cart_bloc.dart';
-import 'Order/blocs/orders_bloc/orders_bloc.dart';
 import 'Primary/blocs/categories_bloc/categories_bloc.dart';
 import 'Splash/blocs/bloc/initroute_bloc.dart';
 import 'Splash/presentation/screens/splash_screen.dart';
@@ -56,10 +55,6 @@ class MainApp extends StatelessWidget {
           BlocProvider<AddressesBloc>(
           create: (context) => AddressesBloc(),
         ),
-        //   BlocProvider<OrdersBloc>(
-        //   create: (context) => OrdersBloc(),
-        // ),
-        
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,

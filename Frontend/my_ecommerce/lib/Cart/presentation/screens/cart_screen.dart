@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_ecommerce/Account/blocs/account_bloc/account_bloc.dart';
 import 'package:my_ecommerce/Cart/blocs/cart_bloc/cart_bloc.dart';
 import 'package:my_ecommerce/Cart/blocs/coupon_bloc/coupon_bloc.dart';
-import 'package:my_ecommerce/Cart/data/models/cart.dart';
 import 'package:my_ecommerce/Order/blocs/checkout_bloc/checkout_bloc.dart';
 import 'package:my_ecommerce/Product/presentation/widgets/loading/product_loading_widget.dart';
 import 'package:my_ecommerce/Shared/widgets/dialogs.dart';
@@ -87,7 +86,6 @@ class _CartScreenState extends State<CartScreen> {
                     : Container(),
             ],
           ),
-          //buildWhen: (previous, current) => current is! CartError,
           body: state is CartLoading
               ? ProductLoadingWidget(
                   isGridView: false,
@@ -114,29 +112,6 @@ class _CartScreenState extends State<CartScreen> {
                                                   },
                                                 ))
                                             .toList(),
-                                        // [
-                                        //   ...ListTile.divideTiles(
-                                        //     context: context,
-                                        //     tiles: List.generate(
-                                        //       state.cart.cartContent.length,
-                                        //       (index) => CartItemCard(
-                                        //         product: state
-                                        //             .cart.cartContent[index],
-                                        //         onDelete: () {
-                                        //           setState(() {
-                                        //             state.cart.cartContent
-                                        //                 .removeAt(index);
-                                        //           });
-                                        //         },
-                                        //         onUpdating: () {
-                                        //           setState(() {
-                                        //             isLoading = true;
-                                        //           });
-                                        //         },
-                                        //       ),
-                                        //     ),
-                                        //   ),
-                                        // ],
                                       ),
                                     ),
                                     if (context.watch<AccountBloc>().state
@@ -232,7 +207,6 @@ class _CartScreenState extends State<CartScreen> {
                                 math.max(MediaQuery.of(context).padding.bottom,
                                     0.0) -
                                 18,
-                            // MediaQuery.of(context).size.width * .26
                           )
                         : Container(),
                   ],

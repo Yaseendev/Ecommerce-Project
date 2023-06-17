@@ -22,9 +22,6 @@ class ProductHomeHCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         openContainer();
-        // Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductScreen(
-        //   product: product,
-        // )));
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 8, bottom: 8),
@@ -60,7 +57,6 @@ class ProductHomeHCard extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 17,
-                      //color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

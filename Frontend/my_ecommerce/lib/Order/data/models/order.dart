@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:equatable/equatable.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:my_ecommerce/Address/data/models/address.dart';
 import 'package:my_ecommerce/Cart/data/models/cart.dart';
 import 'package:my_ecommerce/Utils/enums.dart';
@@ -52,7 +51,6 @@ class Order extends Equatable {
       'address': address.toMap(),
       'notes': notes,
       'paymentMethod': paymentMethod.value,
-      //'orderedAt': orderedAt.millisecondsSinceEpoch,
     };
   }
 

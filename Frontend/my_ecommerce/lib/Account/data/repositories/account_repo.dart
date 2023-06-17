@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:my_ecommerce/Shared/models/network_failure.dart';
-import '../models/name.dart';
 import '../models/user.dart';
 import '../providers/account_db_provider.dart';
 import '../providers/account_network_provider.dart';

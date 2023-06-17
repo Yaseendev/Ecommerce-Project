@@ -55,9 +55,6 @@ class _SignupScreenState extends State<SignupScreen> {
             duration: const Duration(seconds: 2),
           ));
         } else if (state is AccountLoggedIn) {
-          // context.read<AddressBloc>().add(GetAllAddresses());
-          // context.read<WishlistBloc>().add(GetWishList());
-          // context.read<CartBloc>().add(GetCart());
           Navigator.of(context).pushReplacement(MaterialPageRoute(
              settings: RouteSettings(name: '/primary'),
               builder: (_) =>

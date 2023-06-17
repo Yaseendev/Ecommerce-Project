@@ -34,11 +34,9 @@ class OrderItemCard extends StatelessWidget {
               placeholder: Images.PLACEHOLDER,
             ),
           ),
-          //const SizedBox(width: 5),
           Expanded(
             child: ListTile(
               contentPadding: EdgeInsets.symmetric(horizontal: 10),
-              // isThreeLine: false,
               title: Text(
                 item.product.name,
                 style: TextStyle(
@@ -80,7 +78,6 @@ class OrderItemCard extends StatelessWidget {
                       ' ',
                   style: TextStyle(
                     fontSize: 16,
-                    //color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

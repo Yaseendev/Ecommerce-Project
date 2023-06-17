@@ -33,14 +33,10 @@ class WishlistCard extends StatelessWidget {
             child: FadeInImage.assetNetwork(
               fit: BoxFit.fill,
               image: product.images.first,
-              //height: MediaQuery.of(context).size.height * .5,
-              // width: double.infinity,
               placeholder: Images.PLACEHOLDER,
               imageErrorBuilder: (context, url, error) => Image.asset(
                 Images.PLACEHOLDER,
-                // height:
-                //     MediaQuery.of(context).size.height * .5,
-                // width: double.infinity,
+              fit: BoxFit.fill,
               ),
             ),
           ),

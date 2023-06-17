@@ -109,7 +109,6 @@ class _LocationSelectionScreenState extends State<LocationSelectionScreen> {
                         size: 30,
                       ),
                     ),
-                    //const BackElvButton(),
                     Expanded(
                       child: TypeAheadField(
                         minCharsForSuggestions: 1,

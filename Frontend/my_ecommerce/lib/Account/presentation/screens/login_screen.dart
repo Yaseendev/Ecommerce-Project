@@ -63,8 +63,6 @@ class _LoginScreenState extends State<LoginScreen> {
             duration: const Duration(seconds: 2),
           ));
         } else if (state is AccountLoggedIn) {
-          // context.read<AddressBloc>().add(GetAllAddresses());
-          // context.read<WishlistBloc>().add(GetWishList());
           Navigator.of(context).pushReplacement(MaterialPageRoute(
             settings: RouteSettings(name: '/primary'),
             builder: (_) => PrimaryScreen(),
@@ -132,7 +130,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                     hintText: 'E-mail',
                                     prefixIcon: Icon(Icons.email_outlined),
                                   ),
-                                  //autofocus: true,
                                   keyboardType: TextInputType.emailAddress,
                                   textInputAction: TextInputAction.next,
                                   maxLines: 1,
@@ -151,7 +148,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                         borderRadius:
                                             BorderRadius.circular(100)),
                                     hintText: 'Password',
-                                   // labelText: 'Password',
                                     prefixIcon: Icon(Icons.password),
                                     suffixIcon: passwordVisible
                                         ? IconButton(
@@ -285,9 +281,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                           // context.read<AccountBloc>().add(LoginWithGoogleEvent());
                                         },
                                         icon:
-                                            //     CircularProgressIndicator.adaptive(
-                                            //   backgroundColor: Colors.white,
-                                            // ),
                                             Icon(
                                           FontAwesomeIcons.google,
                                           color: Colors.white,

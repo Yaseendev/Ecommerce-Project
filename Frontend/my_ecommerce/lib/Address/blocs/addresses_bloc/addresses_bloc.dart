@@ -55,7 +55,6 @@ class AddressesBloc extends Bloc<AddressesEvent, AddressesState> {
     });
 
     on<SetSelectedAddress>((event, emit) {
-      // _addresses.clear();
       selectedAddress = event.address;
       emit( (state as AddressesFetched).copyWith
         (

@@ -16,7 +16,6 @@ class ProductLoadingWidget extends StatelessWidget {
             baseColor: Colors.grey[300]!,
             highlightColor: Colors.grey[100]!,
             child: GridView.builder(
-              //padding: const EdgeInsets.all(12),
               itemCount: 6,
               shrinkWrap: true,
               physics: const BouncingScrollPhysics(),

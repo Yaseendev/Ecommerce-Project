@@ -179,7 +179,6 @@ class _EditAccountScreenState extends State<EditAccountScreen> {
                       hintText: 'E-mail',
                       prefixIcon: Icon(Icons.email_outlined),
                     ),
-                    //autofocus: true,
                     keyboardType: TextInputType.emailAddress,
                     textInputAction: TextInputAction.next,
                     maxLines: 1,

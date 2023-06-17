@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of 'initroute_bloc.dart';
 
 abstract class InitrouteState extends Equatable {

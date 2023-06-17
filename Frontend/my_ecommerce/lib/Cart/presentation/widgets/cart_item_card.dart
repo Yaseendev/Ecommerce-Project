@@ -141,19 +141,6 @@ class _CartItemCardState extends State<CartItemCard> {
                                                     qty: widget
                                                             .product.quantity -
                                                         1)));
-
-                                            // if (quantity <= 1) {
-                                            //   context.read<CartBloc>().add(
-                                            //       RemoveItem(
-                                            //           widget.product.id ?? ''));
-                                            // } else {
-                                            // setState(() {
-                                            //   quantity--;
-                                            // });
-                                            // context.read<CartBloc>().add(
-                                            //     CartUpdate(widget.product
-                                            //         .copyWith(qty: quantity)));
-                                            //}
                                           },
                                     icon: Icon(Icons.remove),
                                     alignment: Alignment.center,
@@ -200,12 +187,6 @@ class _CartItemCardState extends State<CartItemCard> {
                                                     qty: widget
                                                             .product.quantity +
                                                         1)));
-                                            // setState(() {
-                                            //   quantity++;
-                                            // });
-                                            // context.read<CartBloc>().add(CartUpdate(
-                                            //     widget.product
-                                            //         .copyWith(qty: quantity)));
                                           },
                                     icon: Icon(Icons.add),
                                     alignment: Alignment.center,

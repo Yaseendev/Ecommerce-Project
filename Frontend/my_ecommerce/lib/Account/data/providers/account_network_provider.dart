@@ -43,7 +43,7 @@ class AccountNetworkProvider extends ApiService {
   Future<Map<String, dynamic>> resetPassword(String email) async {
     final Response response = await dio.post(
       //Urls.FORGOTPASS_API,
-      "",
+      "", //TODO: Implement
       data: FormData.fromMap({
         'email': email,
       }),
@@ -68,7 +68,7 @@ class AccountNetworkProvider extends ApiService {
     return response.data;
   }
 
-  @override //TODO: Refactor
+  @override
   String getErrorMsg(Object error) {
     if (error is Exception) {
       try {

@@ -95,12 +95,9 @@ class OrderStatusStepper extends StatelessWidget {
       lineType: LineType.normal,
       showLoadingAnimation: false,
       activeStepIconColor: Colors.white,
-      // showStepBorder: false,
       borderThickness: 4,
       enableStepTapping: false,
       finishedLineColor: Colors.green,
-      //unreachedStepBackgroundColor: Colors.grey,
-      //AppColors.PRIMARY_COLOR,
       disableScroll: true,
       unreachedLineColor: Colors.grey,
       activeStepBorderColor:

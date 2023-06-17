@@ -12,7 +12,6 @@ class GridProductsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      //  padding: const EdgeInsets.all(12),
       itemCount: products.length,
       shrinkWrap: true,
       physics: BouncingScrollPhysics(),

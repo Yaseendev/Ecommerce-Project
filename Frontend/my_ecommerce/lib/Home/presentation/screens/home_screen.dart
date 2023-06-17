@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_ecommerce/Address/blocs/addresses_bloc/addresses_bloc.dart';
 import 'package:my_ecommerce/Home/blocs/new_products_bloc/newly_added_bloc.dart';
 import 'package:my_ecommerce/Home/blocs/popular_bloc/popular_bloc.dart';
 import 'package:my_ecommerce/Home/blocs/products_ads_bloc/products_ads_bloc.dart';

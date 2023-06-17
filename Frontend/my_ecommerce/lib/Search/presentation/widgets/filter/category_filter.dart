@@ -20,23 +20,9 @@ class CategoryFilter extends StatefulWidget {
 }
 
 class _CategoryFilterState extends State<CategoryFilter> {
-  //late final FilterCheckState all;
 
   @override
   void initState() {
-    // values = widget.allCategories
-    //     .map((cat) => FilterCheckState(
-    //           icon: Image.network(cat.imgUrl),
-    //           title: cat.name,
-    //           value: widget.selectedCategories.isEmpty ||
-    //               widget.selectedCategories.contains(cat),
-    //         ))
-    //     .toList();
-    // all = FilterCheckState(
-    //   icon: Icon(Icons.category_rounded),
-    //   title: 'all',
-    //   value: ,
-    // );
     super.initState();
   }
 
@@ -58,7 +44,6 @@ class _CategoryFilterState extends State<CategoryFilter> {
                   ),
                   backgroundColor: MaterialStateProperty.all(Color(0xFFF5F5F5)),
                   alignment: Alignment.center,
-                  // /padding: MaterialStateProperty.all(EdgeInsets.only(left: 10)),
                 ),
                 onPressed: () {
                   widget.onBack();
@@ -100,7 +85,6 @@ class _CategoryFilterState extends State<CategoryFilter> {
                     value: widget.selectedCategories.isEmpty ||
                         widget.selectedCategories.length ==
                             state.categories.length,
-                    //values.every((element) => element.value),
                     activeColor: AppColors.PRIMARY_COLOR,
                     onChanged: (value) => toggleGroup(value, state.categories),
                   ),

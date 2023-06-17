@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:my_ecommerce/Product/data/models/product.dart';
 import 'package:my_ecommerce/Search/data/repositories/search_repo.dart';
@@ -90,10 +89,6 @@ class _SearchBoxState extends State<SearchBox> {
             hideOnError: true,
             itemBuilder: (context, suggestion) => SuggestionTile(suggestion),
             onSuggestionSelected: (suggestion) {
-              // Navigator.of(context).push(MaterialPageRoute(
-              //     builder: (_) => ProductScreen(
-              //       product: suggestion,
-              //     )));
             },
           ),
         ),

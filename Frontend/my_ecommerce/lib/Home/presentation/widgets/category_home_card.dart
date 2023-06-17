@@ -29,9 +29,7 @@ class CategoryHomeCard extends StatelessWidget {
             CircleAvatar(
               radius: 30,
               foregroundImage: NetworkImage(category.imgUrl),
-              //onForegroundImageError: ,
               backgroundImage: AssetImage(Images.PLACEHOLDER),
-              //child: Icon(FontAwesomeIcons.shop),
             ),
             SizedBox(height: 8),
             Text(

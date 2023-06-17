@@ -34,7 +34,6 @@ class LocationAddress extends Equatable{
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
-      //'location': location.toMap(),
       'name': name,
       'street': street,
       'area': area,

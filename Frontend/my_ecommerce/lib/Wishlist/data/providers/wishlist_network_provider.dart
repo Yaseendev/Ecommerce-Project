@@ -43,7 +43,7 @@ class WishlistNetworkProvider extends ApiService {
     return response.data;
   }
 
-    @override //TODO: Refactor
+    @override
     String getErrorMsg(Object error) {
     if (error is Exception) {
       try {

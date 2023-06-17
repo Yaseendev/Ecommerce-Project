@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
@@ -40,19 +39,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       emit(CartLoading());
       cart = event.cart;
       emit(CartLoaded(event.cart));
-      // if (await connectivity.checkConnectivity() != ConnectivityResult.none) {
-      //   emit(CartLoading());
-      //   await _cartRepo.addToCart(event.item).then((res) {
-      //     res.fold((left) => emit(CartError(left.message)), (right) {
-      //       emit(CartLoaded(right));
-      //     });
-      //   }).onError((error, stackTrace) {
-      //     print(error);
-      //     emit(CartError(error.toString()));
-      //   });
-      // } else {
-      //   emit(CartNoInternet());
-      // }
     });
 
     on<RemoveItem>((event, emit) async {
@@ -71,58 +57,13 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       }
     });
 
-    // on<CartRemoveCoupon>((event, emit) async {
-    //   if (await connectivity.checkConnectivity() != ConnectivityResult.none) {
-    //     emit(CartLoading());
-    //     await _cartRepo.removeCoupon(event.c).then((res) {
-    //       res.fold((left) => emit(CartError(left.message)), (right) {
-    //         emit(CartLoaded(right));
-    //       });
-    //     }).onError((error, stackTrace) {
-    //       print(error);
-    //       emit(CartError(error.toString()));
-    //     });
-    //   } else {
-    //     emit(CartNoInternet());
-    //   }
-    // });
 
-    // on<CartApplyCoupon>((event, emit) async {
-    //   if (await connectivity.checkConnectivity() != ConnectivityResult.none) {
-    //     emit(CartLoading());
-    //     await _cartRepo.applyCoupon(event.c).then((res) {
-    //       res.fold((left) => emit(CartError(left.message)), (right) {
-    //         emit(CartLoaded(right));
-    //       });
-    //     }).onError((error, stackTrace) {
-    //       print(error);
-    //       emit(CartError(error.toString()));
-    //     });
-    //   } else {
-    //     emit(CartNoInternet());
-    //   }
-    // });
 
     on<CartUpdate>((event, emit) async {
-       //emit(CartLoading());
       cart = event.cart;
       emit(CartLoaded(event.cart.copyWith(
 cartContent: List.of(event.cart.cartContent),
       )));
-      // if (await connectivity.checkConnectivity() != ConnectivityResult.none) {
-      //   emit(CartLoading());
-      //   await _cartRepo.updateCart(event.item).then((res) {
-      //     res.fold((left) => emit(CartError(left.message)), (right) {
-      //       cart = right;
-      //       emit(CartLoaded(right));
-      //     });
-      //   }).onError((error, stackTrace) {
-      //     print(error);
-      //     emit(CartError(error.toString()));
-      //   });
-      // } else {
-      //   emit(CartNoInternet());
-      // }
     });
 
     on<CartAddMultiItems>((event, emit) async {

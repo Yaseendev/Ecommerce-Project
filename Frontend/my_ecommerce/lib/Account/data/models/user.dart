@@ -19,18 +19,11 @@ class User extends Equatable {
   @HiveField(3)
   final String avatarUrl;
 
-  // final List<Address> addresses;
-  // final List<Product> wishList;
-  //final Cart? cart;
-
   User({
     this.id,
     required this.name,
     required this.email,
     this.avatarUrl = '',
-    // this.addresses =const [],
-    // this.wishList=const [],
-    // this.cart,
   });
 
   @override
@@ -38,10 +31,8 @@ class User extends Equatable {
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
-      //'id': id,
       ...name.toMap(),
       'email': email,
-      //'avatar': avatarUrl,
     };
   }
 
@@ -51,15 +42,6 @@ class User extends Equatable {
       name: Name.fromMap(map),
       email: map['email'] as String,
       avatarUrl: map['profileImgUrl'] ?? '',
-      // addresses: (map['addresses'] as List<dynamic>)
-      //     .map((e) => Address.fromMap(e))
-      //     .toList(),
-      // wishList: (map['wishList'] as List<dynamic>)
-      //     .map((e) => Product.fromMap(e))
-      //     .toList(),
-      // cart: map['cart'] == null
-      //  ? Cart(cartContent: [], total: 0, subtotal: 0)
-      //     : Cart.fromMap(map['cart']),
     );
   }
 

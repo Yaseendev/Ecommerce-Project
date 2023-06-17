@@ -66,7 +66,6 @@ class HomeItemCard extends StatelessWidget {
                       Align(
                         alignment: Alignment.topRight,
                         child: BlocBuilder<WishlistBloc, WishlistState>(
-                          //buildWhen: (previous, current) => current is WishlistLoaded && current.,
                           builder: (context, state) {
                             final bool isWishlisted = state is WishlistLoaded &&
                                 state.products
@@ -139,14 +138,6 @@ class HomeItemCard extends StatelessWidget {
                             elevation: 0,
                             shape: StadiumBorder(),
                           ),
-
-                          // Chip(
-                          //   label: Text('${product.salePercentage}% Off'),
-                          //   backgroundColor: Colors.transparent,
-
-                          //   labelStyle:
-                          //       TextStyle(color: AppColors.SECONDARY_COLOR),
-                          // ),
                         ),
                     ],
                   ),

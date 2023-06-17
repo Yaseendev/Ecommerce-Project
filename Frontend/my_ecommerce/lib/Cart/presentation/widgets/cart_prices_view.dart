@@ -23,7 +23,6 @@ class CartPricesView extends StatelessWidget {
                     'Sub-total:',
                     style: TextStyle(
                       fontSize: 18,
-                      //fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(width: 8),

@@ -78,7 +78,6 @@ class ProductHeader extends StatelessWidget {
                         Text(
                           '${product.salePrice?.toStringAsFixed(2)} EGP',
                           style: TextStyle(
-                            //color: AppColors.PRIMARY_COLOR,
                             decoration: TextDecoration.none,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
@@ -91,7 +90,6 @@ class ProductHeader extends StatelessWidget {
           ),
         ),
         const Divider(),
-        //const SizedBox(height: 5),
         Text(
           'Description:',
           style: TextStyle(

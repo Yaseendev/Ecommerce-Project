@@ -117,7 +117,7 @@ class AddressBox extends StatelessWidget implements PreferredSizeWidget {
                         Text(
                           'Deliver to ',
                           style: TextStyle(
-                            color: AppColors.PRIMARY_COLOR, //Colors.white,
+                            color: AppColors.PRIMARY_COLOR,
                           ),
                         ),
                         state is AddressesFetched &&

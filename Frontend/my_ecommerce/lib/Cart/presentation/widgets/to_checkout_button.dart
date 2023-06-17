@@ -39,7 +39,6 @@ class ToCheckoutButton extends StatelessWidget {
                                   cart: cart,
                                 ),
                               )));
-                      //context.read<CartBloc>()
                     } else {
                       showLoginDialog(context, 'continue to checkout');
                     }

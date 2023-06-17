@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_ecommerce/Primary/data/models/category.dart';
 import 'package:my_ecommerce/Search/blocs/filter_bloc/filter_bloc.dart';
 import 'package:my_ecommerce/Search/data/models/search_criteria.dart';
 import 'category_filter.dart';

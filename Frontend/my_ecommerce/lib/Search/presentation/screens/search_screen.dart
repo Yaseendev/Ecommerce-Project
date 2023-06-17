@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:my_ecommerce/Primary/data/models/category.dart';
 import 'package:my_ecommerce/Product/presentation/widgets/loading/product_loading_widget.dart';
 import 'package:my_ecommerce/Search/blocs/search_bloc/search_bloc.dart';
 import 'package:my_ecommerce/Search/data/models/search_criteria.dart';
@@ -24,7 +23,6 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  //final Set<Category> selectedCategories = {};
 
   String? searchterm;
   late TextEditingController textController;
@@ -71,7 +69,6 @@ class _SearchScreenState extends State<SearchScreen> {
                 showModalBottomSheet(
                   context: context,
                   isScrollControlled: true,
-                  // useRootNavigator: true,
                   useSafeArea: true,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.vertical(
