@@ -1,5 +1,3 @@
-![Logo](/Frontend/my_ecommerce/assets/images/logo_transparent.png)
-
 # EShope Ecommerce Project
 
 ## About this app
@@ -17,3 +15,6 @@ EShope is an Ecommerce project developed using Flutter as front-end, Java Spring
 - Voucher coupons integration
 - Orders Status monitoring
 
+## Screenshots
+
+![App Screenshot1](/screenshots/screenshot1.png)
